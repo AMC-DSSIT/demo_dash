@@ -117,7 +117,7 @@ for file in os.listdir():
     	dict_list_entidad[año] = list_temporal_entidad
 
     	# show succesfull message
-    	print(file + " leído correctamente")
+    	#print(file + " leído correctamente")
 
     	# add año to list_dropdown_año
     	list_dropdown_año.append({'label': año,'value': año})
@@ -128,6 +128,7 @@ for file in os.listdir():
 #for value in list_temporal_entidad:
 #	list_dropdown_entidad.append({'label': value,'value': value})
 
+'''
 # create excel writer object
 writer = pd.ExcelWriter(name_data_xlsx)
 
@@ -139,6 +140,8 @@ writer.save()
 
 # show succesfull message
 print ("Data guardada correctamente como: " + name_data_xlsx)
+'''
+
 
 '''
 new_df_dash =  new_df[new_df['Año']=="2020"]
